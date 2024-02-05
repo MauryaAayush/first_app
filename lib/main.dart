@@ -125,7 +125,7 @@ class MyApp extends StatelessWidget {
                   Text(
                     'Special Offers',
                     style: TextStyle(
-                      color: Colors.white70,
+                      color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
                     ),
@@ -133,7 +133,7 @@ class MyApp extends StatelessWidget {
                   Text(
                     'See All',
                     style: TextStyle(
-                        color: Colors.white70,
+                        color: Colors.white,
                         fontSize: 17,
                         fontWeight: FontWeight.w500),
                   ),
@@ -191,12 +191,222 @@ class MyApp extends StatelessWidget {
                       height: height*0.2,
                       width: width*0.3,
                       // color: Colors.blue,
-                      child: Image.asset('asset/sofa.png')
+                      child: Image.network('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713')
                     ),
                   ],
                 ),
               ),
+            ),
+
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 20,horizontal: 20),
+              // color: Colors.blue,
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20
+                        )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              // color: Colors.blue,
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                  SizedBox.square(dimension: 30),
+                  Column(
+                    children: [
+                      Container(
+                        child: CircleAvatar(
+                          backgroundColor: Color(0xFF35383F),
+                          backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+                          radius: 35,
+
+                        ),
+                      ),
+                      SizedBox.square(dimension: 12),
+                      Text('Sofa',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20
+                          )
+                      ),)
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 18),
+              padding: EdgeInsets.symmetric(horizontal: 28),
+              // color: Colors.blue,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Most Popular',style: GoogleFonts.poppins(
+                    textStyle: TextStyle(
+                      fontSize: 22,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    )
+                  ),),
+                  Text('See All',style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      )
+                  ),),
+                ],
+              ),
             )
+
           ],
         ),
       ),
