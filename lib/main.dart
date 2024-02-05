@@ -13,8 +13,185 @@ class MyApp extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
 
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+       body: Column(
+         children: [
+           Container(
+             child: Row(
+               children: [
+                 Container(
+                   margin: EdgeInsets.fromLTRB(10,30,0,0),
+                   height: height*0.08,
+                   width: width*0.918,
+                   decoration: BoxDecoration(
+                     // color: Colors.blue,
+                   ),
+                   child: Row(
+                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                     children: [
+                       Container(
+                         margin: EdgeInsets.symmetric(horizontal: 1),
+                         height: height*0.05,
+                         width: width*0.11,
+                         decoration: BoxDecoration(
+                           color: Colors.white,
+                          shape: BoxShape.circle,
+
+                         ),
+                       ),
+
+                       // here we have written the text of 👋 and AM
+                       Column(
+                         mainAxisAlignment: MainAxisAlignment.center,
+                         children: [
+                           Text('  Good Morning 👋',style: TextStyle(
+                               color: Colors.white70,
+                           ),
+                           ),
+                           Text('Aayush Maurya',style: TextStyle(
+                             color: Colors.white,
+                             fontWeight: FontWeight.w500,
+                             fontSize: 16
+                           ),)
+                         ],
+                       ),
+
+                       SizedBox(width: 110,),
+
+                       Icon(
+                         Icons.notifications_none_outlined,
+                         size: 30,
+                         color: Colors.white,
+                       ),
+                       SizedBox(
+                         width: 1,
+                       ),
+                       Icon(
+                         Icons.favorite_border_rounded,
+                         size: 30 ,
+                         color: Colors.white,
+                       ),
+                     ],
+                   ),
+                 ),
+
+               ],
+             ),
+           ),
+           Container(
+             margin: EdgeInsets.symmetric(horizontal: 11),
+             padding: EdgeInsets.symmetric(horizontal: 15),
+             decoration: BoxDecoration(
+               color: Color(0xFF1F222A),
+               borderRadius: BorderRadius.all(Radius.circular(20))
+             ),
+             child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               children: [
+                 Icon(
+                   Icons.search,
+                   color: Colors.grey,
+                 ),
+                 Text('Search',style: TextStyle(
+                   color: Colors.grey,
+                   fontSize: 18,
+                 ),
+                 ),
+
+                 Container(
+                   height: height*0.07  ,
+                   width: width*0.5,
+                 ),
+                 Icon(
+                   Icons.menu,
+                   color: Colors.grey,
+                 ),
+
+
+               ],
+             ),
+           ),
+
+           Container(
+             margin: EdgeInsets.symmetric(vertical: 10),
+             padding: EdgeInsets.symmetric(horizontal: 20),
+             child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               children: [
+                 Text('Special Offers', style: TextStyle(
+                   color: Colors.white70,
+                   fontSize: 20,
+                   fontWeight: FontWeight.w500,
+                 ),),
+                 Text('See All', style: TextStyle(
+                   color: Colors.white70,
+                   fontSize: 17,
+                   fontWeight: FontWeight.w500
+                 ),),
+               ],
+             ),
+           ),
+
+           Container(
+             margin: EdgeInsets.symmetric(horizontal: 20),
+             height: height*0.2,
+             width: width,
+             decoration: BoxDecoration(
+               color: Color(0xFF35383F),
+               borderRadius: BorderRadius.circular(30)
+             ),
+             child: Container(
+               padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+               child: Row(
+                 mainAxisAlignment: MainAxisAlignment.start,
+                 children: [
+                   Column(
+                     mainAxisAlignment: MainAxisAlignment.start,
+                     children: [
+                     RichText(
+                         text: TextSpan(
+                          children: [
+                            TextSpan(
+
+                              text: '25%\n',style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 38,
+                              fontWeight: FontWeight.w600
+                            ),),
+
+                            TextSpan(
+                              text: "Today's Special!",style: TextStyle(
+                              fontSize: 20,
+                            )
+                            )
+                          ]
+                     ))
+                   ],
+
+                   ),
+                   Column(
+                     mainAxisAlignment: MainAxisAlignment.end,
+                     verticalDirection: VerticalDirection.down,
+                     children: [
+
+                       // icons of bottem
+                       Icon(
+                         Icons.radio_button_checked,
+                         color: Colors.black,
+                       )
+                     ],
+                   ),
+
+                 ],
+               ),
+             ),
+           )
+         ],
+       ),
+      ),
     );
   }
 }
