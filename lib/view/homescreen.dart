@@ -439,12 +439,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
                             height: height * 0.2,
                             width: width * 0.425,
                             decoration: BoxDecoration(
                                 color: Color(0xFF35383F),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(10))),
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: Image.asset('assets/images/2.jpg',
+                                fit: BoxFit.fitWidth),
                           ),
                           SizedBox.square(dimension: 10),
                           Text('Shiny Wooden Chair',style: GoogleFonts.poppins(
@@ -502,22 +505,71 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
+                          margin: EdgeInsets.symmetric(vertical: 10),
                           height: height * 0.2,
                           width: width * 0.425,
                           decoration: BoxDecoration(
                               color: Color(0xFF35383F),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
+                              BorderRadius.all(Radius.circular(20))),
                         ),
-                        Text(''),
+                        SizedBox.square(dimension: 10),
+                        Text('Shiny Wooden Chair',style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15.5,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        ),
+                        SizedBox.square(dimension: 8,),
                         Row(
-                          children: [],
+                          children: [
+                            Icon(Icons.star_half,
+                              color: Colors.white,),
+
+                            SizedBox.square(dimension: 10,),
+
+                            Text('4.6   |',style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            )
+                            ),
+                            SizedBox.square(dimension: 10,),
+                            Container(
+                              alignment: Alignment.center,
+                              height: height*0.025,
+                              width: width*0.19,
+                              decoration: const BoxDecoration(
+                                  color: Color(0xFF35383F),
+                                  borderRadius: BorderRadius.all(Radius.circular(5))
+                              ),
+                              child: Text('6,641 sold',style: GoogleFonts.poppins(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                              ),),
+                            ),
+                          ],
                         ),
-                        Text(''),
+                        SizedBox.square(dimension: 8,),
+                        Text('\$115.00',style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                            )
+                        )),
                       ],
-                    )
+                    ),
                   ],
                 )
             ),
