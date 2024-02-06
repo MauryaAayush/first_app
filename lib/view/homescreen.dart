@@ -490,12 +490,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
-                          SizedBox.square(dimension: 10,),
+                          SizedBox.square(dimension: 8,),
                           Text('\$115.00',style: GoogleFonts.poppins(
                             textStyle: TextStyle(
                               color: Colors.white,
                               fontSize: 15,
-                              fontWeight: FontWeight.bold
+                              fontWeight: FontWeight.w600,
                             )
                           )),
                         ],
