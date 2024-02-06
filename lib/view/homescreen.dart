@@ -1,4 +1,5 @@
 import 'package:first_app/utils/Categories.dart';
+import 'package:first_app/utils/Product.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,8 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
-
 
     return Scaffold(
       backgroundColor: Color(0xFF181A20),
@@ -89,7 +88,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
             Container(
               margin: EdgeInsets.symmetric(horizontal: 11),
               padding: EdgeInsets.symmetric(horizontal: 15),
@@ -121,7 +119,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
             Container(
               margin: EdgeInsets.symmetric(vertical: 10),
               padding: EdgeInsets.symmetric(horizontal: 20),
@@ -146,7 +143,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
             Container(
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 15),
@@ -159,8 +155,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 25, vertical: 20),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -209,15 +205,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-
             Container(
               margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: List.generate(icon1.length, (index) => CategoriesBox(icon1[index]['text'], icon1[index]['icons'])),
+                children: List.generate(
+                    icon1.length,
+                    (index) => CategoriesBox(
+                        icon1[index]['text'], icon1[index]['icons'])),
               ),
             ),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: List.generate(
@@ -225,7 +222,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   (index) => CategoriesBox(
                       icon2[index]['text'], icon2[index]['icons'])),
             ),
-
             Container(
               margin: EdgeInsets.symmetric(vertical: 18),
               padding: EdgeInsets.symmetric(horizontal: 28),
@@ -254,7 +250,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
             Container(
               // color: Colors.blue,
               child: SingleChildScrollView(
@@ -426,14 +421,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                   children: [
                     Container(
-                      padding : EdgeInsets.symmetric(horizontal: 20),
+                      padding: EdgeInsets.symmetric(horizontal: 20),
                       // color : Colors.yellow,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -446,61 +440,72 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Color(0xFF35383F),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
-                            child: Image.asset('assets/images/2.jpg',
+                            child: Image.asset('assets/images/chair.png',
                                 fit: BoxFit.fitWidth),
                           ),
                           SizedBox.square(dimension: 10),
-                          Text('Shiny Wooden Chair',style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15.5,
-                              fontWeight: FontWeight.w600,
+                          Text(
+                            'Shiny Wooden Chair',
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15.5,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
-                           ),
                           ),
-                          SizedBox.square(dimension: 8,),
+                          SizedBox.square(
+                            dimension: 8,
+                          ),
                           Row(
                             children: [
-                              Icon(Icons.star_half,
-                              color: Colors.white,),
-
-                              SizedBox.square(dimension: 10,),
-
-                              Text('4.6   |',style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold
-                                ),
-                              )
+                              Icon(
+                                Icons.star_half,
+                                color: Colors.white,
                               ),
-                              SizedBox.square(dimension: 10,),
+                              SizedBox.square(
+                                dimension: 10,
+                              ),
+                              Text('4.6   |',
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                              SizedBox.square(
+                                dimension: 10,
+                              ),
                               Container(
                                 alignment: Alignment.center,
-                                height: height*0.025,
-                                width: width*0.19,
+                                height: height * 0.025,
+                                width: width * 0.19,
                                 decoration: const BoxDecoration(
-                                  color: Color(0xFF35383F),
-                                  borderRadius: BorderRadius.all(Radius.circular(5))
-                                ),
-                                child: Text('6,641 sold',style: GoogleFonts.poppins(
-                                  textStyle: const TextStyle(
+                                    color: Color(0xFF35383F),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(5))),
+                                child: Text(
+                                  '6,641 sold',
+                                  style: GoogleFonts.poppins(
+                                      textStyle: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                  )
-                                ),),
+                                  )),
+                                ),
                               ),
                             ],
                           ),
-                          SizedBox.square(dimension: 8,),
-                          Text('\$115.00',style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                            )
-                          )),
+                          SizedBox.square(
+                            dimension: 8,
+                          ),
+                          Text('\$115.00',
+                              style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                              ))),
                         ],
                       ),
                     ),
@@ -514,68 +519,88 @@ class _HomeScreenState extends State<HomeScreen> {
                           decoration: BoxDecoration(
                               color: Color(0xFF35383F),
                               borderRadius:
-                              BorderRadius.all(Radius.circular(20))),
+                                  BorderRadius.all(Radius.circular(20))),
                         ),
                         SizedBox.square(dimension: 10),
-                        Text('Shiny Wooden Chair',style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15.5,
-                            fontWeight: FontWeight.w600,
+                        Text(
+                          'Shiny Wooden Chair',
+                          style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15.5,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
+                        SizedBox.square(
+                          dimension: 8,
                         ),
-                        SizedBox.square(dimension: 8,),
                         Row(
                           children: [
-                            Icon(Icons.star_half,
-                              color: Colors.white,),
-
-                            SizedBox.square(dimension: 10,),
-
-                            Text('4.6   |',style: GoogleFonts.poppins(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            )
+                            Icon(
+                              Icons.star_half,
+                              color: Colors.white,
                             ),
-                            SizedBox.square(dimension: 10,),
+                            SizedBox.square(
+                              dimension: 10,
+                            ),
+                            Text('4.6   |',
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.bold),
+                                )),
+                            SizedBox.square(
+                              dimension: 10,
+                            ),
                             Container(
                               alignment: Alignment.center,
-                              height: height*0.025,
-                              width: width*0.19,
+                              height: height * 0.025,
+                              width: width * 0.19,
                               decoration: const BoxDecoration(
                                   color: Color(0xFF35383F),
-                                  borderRadius: BorderRadius.all(Radius.circular(5))
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5))),
+                              child: Text(
+                                '6,641 sold',
+                                style: GoogleFonts.poppins(
+                                    textStyle: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                )),
                               ),
-                              child: Text('6,641 sold',style: GoogleFonts.poppins(
-                                  textStyle: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
-                                  )
-                              ),),
                             ),
                           ],
                         ),
-                        SizedBox.square(dimension: 8,),
-                        Text('\$115.00',style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
+                        SizedBox.square(
+                          dimension: 8,
+                        ),
+                        Text('\$115.00',
+                            style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
                               color: Colors.white,
                               fontSize: 15,
                               fontWeight: FontWeight.w600,
-                            )
-                        )),
+                            ))),
                       ],
                     ),
                   ],
-                )
-            ),
-
-
-
+                )),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                // color: Colors.blue,
+                child: Row(
+                    children: List.generate(
+                        r1.length,
+                        (index) => Products(
+                            context,
+                            r1[index]['img'],
+                            r1[index]['text'],
+                            r1[index]['rate'],
+                            r1[index]['sale'],
+                            r1[index]['price'])))),
           ],
         ),
       ),
@@ -593,8 +618,7 @@ Widget CategoriesBox(String text, Icon icons) {
               backgroundColor: Color(0xFF35383F),
               // backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
               radius: 32,
-              child: icons
-          ),
+              child: icons),
         ),
         SizedBox.square(dimension: 12),
         Text(
@@ -605,6 +629,111 @@ Widget CategoriesBox(String text, Icon icons) {
                   fontWeight: FontWeight.w500,
                   fontSize: 15)),
         )
+      ],
+    ),
+  );
+}
+
+Widget Products(BuildContext context, String img, String text, String rate,
+    String sale, String price) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
+
+  return Container(
+    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+    // color : Colors.yellow,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+          height: height * 0.2,
+          width: width * 0.425,
+          decoration: BoxDecoration(
+              color: Color(0xFF35383F),
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: Stack(
+            children: [
+              Image.asset(img, fit: BoxFit.fitWidth),
+              Positioned(
+                top: 10,
+                right: 15,
+                child: CircleAvatar(
+                  backgroundColor: Color(0xFF17181A),
+                  radius: 13,
+                  child: Icon(
+                    Icons.favorite,
+                    color: Colors.white,
+                    size: 15,
+                  ),
+                ),
+              ),
+
+            ],
+          ),
+        ),
+        SizedBox.square(dimension: 10),
+        Text(
+          text,
+          style: GoogleFonts.poppins(
+            textStyle: TextStyle(
+              color: Colors.white,
+              fontSize: 15.5,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        SizedBox.square(
+          dimension: 8,
+        ),
+        Row(
+          children: [
+            Icon(
+              Icons.star_half,
+              color: Colors.white,
+            ),
+            SizedBox.square(
+              dimension: 10,
+            ),
+            Text('$rate   |',
+                style: GoogleFonts.poppins(
+                  textStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold),
+                )),
+            SizedBox.square(
+              dimension: 10,
+            ),
+            Container(
+              alignment: Alignment.center,
+              height: height * 0.025,
+              width: width * 0.19,
+              decoration: const BoxDecoration(
+                  color: Color(0xFF35383F),
+                  borderRadius: BorderRadius.all(Radius.circular(5))),
+              child: Text(
+                sale,
+                style: GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                )),
+              ),
+            ),
+          ],
+        ),
+        SizedBox.square(
+          dimension: 8,
+        ),
+        Text(price,
+            style: GoogleFonts.poppins(
+                textStyle: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+              fontWeight: FontWeight.w600,
+            ))),
       ],
     ),
   );
