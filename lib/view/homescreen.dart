@@ -39,17 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         CircleAvatar(
                           backgroundColor: Colors.blue,
                           radius: 25,
-                          child: Image.asset(''),
+                          backgroundImage: AssetImage('assets/images/me.jpg'),
+                         foregroundImage: AssetImage('assets/images/me.jpg'),
                         ),
-                        // Container(
-                        //   margin: EdgeInsets.symmetric(horizontal: 1),
-                        //   height: height * 0.05,
-                        //   width: width * 0.11,
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.white,
-                        //     shape: BoxShape.circle,
-                        //   ),
-                        // ),
 
                         // here we have written the text of 👋 and AM
                          Column(
@@ -427,186 +419,91 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20),
-                      // color : Colors.yellow,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.symmetric(vertical: 10),
-                            height: height * 0.2,
-                            width: width * 0.425,
-                            decoration: BoxDecoration(
-                                color: Color(0xFF35383F),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20))),
-                            child: Image.asset('assets/images/chair.png',
-                                fit: BoxFit.fitWidth),
-                          ),
-                          SizedBox.square(dimension: 10),
-                          Text(
-                            'Shiny Wooden Chair',
-                            style: GoogleFonts.poppins(
-                              textStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15.5,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                          SizedBox.square(
-                            dimension: 8,
-                          ),
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.star_half,
-                                color: Colors.white,
-                              ),
-                              SizedBox.square(
-                                dimension: 10,
-                              ),
-                              Text('4.6   |',
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold),
-                                  )),
-                              SizedBox.square(
-                                dimension: 10,
-                              ),
-                              Container(
-                                alignment: Alignment.center,
-                                height: height * 0.025,
-                                width: width * 0.19,
-                                decoration: const BoxDecoration(
-                                    color: Color(0xFF35383F),
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(5))),
-                                child: Text(
-                                  '6,641 sold',
-                                  style: GoogleFonts.poppins(
-                                      textStyle: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox.square(
-                            dimension: 8,
-                          ),
-                          Text('\$115.00',
-                              style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ))),
-                        ],
-                      ),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 10),
-                          height: height * 0.2,
-                          width: width * 0.425,
-                          decoration: BoxDecoration(
-                              color: Color(0xFF35383F),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20))),
-                        ),
-                        SizedBox.square(dimension: 10),
-                        Text(
-                          'Shiny Wooden Chair',
-                          style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15.5,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                        SizedBox.square(
-                          dimension: 8,
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.star_half,
-                              color: Colors.white,
-                            ),
-                            SizedBox.square(
-                              dimension: 10,
-                            ),
-                            Text('4.6   |',
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                )),
-                            SizedBox.square(
-                              dimension: 10,
-                            ),
-                            Container(
-                              alignment: Alignment.center,
-                              height: height * 0.025,
-                              width: width * 0.19,
-                              decoration: const BoxDecoration(
-                                  color: Color(0xFF35383F),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(5))),
-                              child: Text(
-                                '6,641 sold',
-                                style: GoogleFonts.poppins(
-                                    textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                )),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox.square(
-                          dimension: 8,
-                        ),
-                        Text('\$115.00',
-                            style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                            ))),
-                      ],
-                    ),
-                  ],
+                  children: List.generate(
+                      r1.length,
+                          (index) => Products(
+                          context,
+                          r1[index]['img'],
+                          r1[index]['text'],
+                          r1[index]['rate'],
+                          r1[index]['sale'],
+                          r1[index]['price']
+                      )
+                  )
                 )),
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
-                        r1.length,
+                        r2.length,
                         (index) => Products(
                             context,
-                            r1[index]['img'],
-                            r1[index]['text'],
-                            r1[index]['rate'],
-                            r1[index]['sale'],
-                            r1[index]['price'])))),
+                            r2[index]['img'],
+                            r2[index]['text'],
+                            r2[index]['rate'],
+                            r2[index]['sale'],
+                            r2[index]['price']
+                        )
+                    )
+                )
+            ),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                // color: Colors.blue,
+                child: Row(
+                    children: List.generate(
+                        r3.length,
+                            (index) => Products(
+                            context,
+                            r3[index]['img'],
+                            r3[index]['text'],
+                            r3[index]['rate'],
+                            r3[index]['sale'],
+                            r3[index]['price']
+                        )
+                    )
+                )
+            ),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                // color: Colors.blue,
+                child: Row(
+                    children: List.generate(
+                        r4.length,
+                            (index) => Products(
+                            context,
+                            r4[index]['img'],
+                            r4[index]['text'],
+                            r4[index]['rate'],
+                            r4[index]['sale'],
+                            r4[index]['price']
+                        )
+                    )
+                )
+            ),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                // color: Colors.blue,
+                child: Row(
+                    children: List.generate(
+                        r5.length,
+                            (index) => Products(
+                            context,
+                            r5[index]['img'],
+                            r5[index]['text'],
+                            r5[index]['rate'],
+                            r5[index]['sale'],
+                            r5[index]['price']
+                        )
+                    )
+                )
+            ),
           ],
         ),
       ),
