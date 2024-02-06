@@ -428,27 +428,73 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             Container(
-                margin: EdgeInsets.symmetric(vertical: 20),
+                margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                   children: [
-                    Column(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.symmetric(horizontal: 20),
-                          height: height * 0.2,
-                          width: width * 0.425,
-                          decoration: BoxDecoration(
-                              color: Color(0xFF35383F),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        ),
-                        Text(''),
-                        Row(
-                          children: [],
-                        ),
-                        Text(''),
-                      ],
+                    Container(
+                      padding : EdgeInsets.symmetric(horizontal: 20),
+                      // color : Colors.yellow,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: height * 0.2,
+                            width: width * 0.425,
+                            decoration: BoxDecoration(
+                                color: Color(0xFF35383F),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                          ),
+                          SizedBox.square(dimension: 10),
+                          Text('Shiny Wooden Chair',style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15.5,
+                              fontWeight: FontWeight.w600,
+                            ),
+                           ),
+                          ),
+                          SizedBox.square(dimension: 8,),
+                          Row(
+                            children: [
+                              Icon(Icons.star_half,
+                              color: Colors.white,),
+
+                              SizedBox.square(dimension: 10,),
+
+                              Text('4.6   |',style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              )
+                              ),
+                              SizedBox.square(dimension: 10,),
+                              Container(
+                                alignment: Alignment.center,
+                                height: height*0.025,
+                                width: width*0.2,
+                                decoration: const BoxDecoration(
+                                  color: Color(0xFF35383F),
+                                  borderRadius: BorderRadius.all(Radius.circular(5))
+                                ),
+                                child: Text('6,641 sold',style: GoogleFonts.poppins(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                ),),
+                              ),
+                            ],
+                          ),
+                          Text('Hello',style: TextStyle(
+                            color: Colors.white
+                          ),),
+                        ],
+                      ),
                     ),
                     Column(
                       children: [
@@ -490,7 +536,8 @@ Widget CategoriesBox(String text, Icon icons) {
               backgroundColor: Color(0xFF35383F),
               // backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
               radius: 32,
-              child: icons),
+              child: icons
+          ),
         ),
         SizedBox.square(dimension: 12),
         Text(
