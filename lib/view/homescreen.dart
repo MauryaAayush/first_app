@@ -475,7 +475,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Container(
                                 alignment: Alignment.center,
                                 height: height*0.025,
-                                width: width*0.2,
+                                width: width*0.19,
                                 decoration: const BoxDecoration(
                                   color: Color(0xFF35383F),
                                   borderRadius: BorderRadius.all(Radius.circular(5))
@@ -490,9 +490,14 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
-                          Text('Hello',style: TextStyle(
-                            color: Colors.white
-                          ),),
+                          SizedBox.square(dimension: 10,),
+                          Text('\$115.00',style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold
+                            )
+                          )),
                         ],
                       ),
                     ),
