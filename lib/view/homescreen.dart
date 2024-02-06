@@ -35,18 +35,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          margin: EdgeInsets.symmetric(horizontal: 1),
-                          height: height * 0.05,
-                          width: width * 0.11,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                          ),
+                        
+                        CircleAvatar(
+                          backgroundColor: Colors.blue,
+                          radius: 25,
+                          child: Image.asset(''),
                         ),
+                        // Container(
+                        //   margin: EdgeInsets.symmetric(horizontal: 1),
+                        //   height: height * 0.05,
+                        //   width: width * 0.11,
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.white,
+                        //     shape: BoxShape.circle,
+                        //   ),
+                        // ),
 
                         // here we have written the text of 👋 and AM
-                        const Column(
+                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
