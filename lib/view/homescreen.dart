@@ -94,22 +94,22 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.search,
                     color: Colors.grey,
                   ),
-                  Text(
+                  const Text(
                     'Search',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 18,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: height * 0.07,
                     width: width * 0.5,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.menu,
                     color: Colors.grey,
                   ),
