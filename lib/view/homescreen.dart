@@ -543,7 +543,7 @@ Widget Products(BuildContext context, String img, String text, String rate,
           child: Stack(
             children: [
               Image.asset(img, fit: BoxFit.fitWidth),
-              Positioned(
+              const Positioned(
                 top: 10,
                 right: 15,
                 child: CircleAvatar(
