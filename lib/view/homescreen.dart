@@ -225,8 +225,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon2[index]['text'], icon2[index]['icons'])),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 25),
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              margin: const EdgeInsets.symmetric(vertical: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               // color: Colors.blue,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
