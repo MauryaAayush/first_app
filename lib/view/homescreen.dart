@@ -611,7 +611,7 @@ Widget Products(BuildContext context, String img, String text, String rate,
             ),
           ],
         ),
-        SizedBox.square(
+        const SizedBox.square(
           dimension: 8,
         ),
         Text(price,
