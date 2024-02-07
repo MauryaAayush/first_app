@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 dimension: 10,
                               ),
                               Text(
-                                  "Get discount for every \norder.onlyvalid for today",
+                                  "Get discount for every\norder.only valid for today",
                                   style: GoogleFonts.poppins(
                                     textStyle: const TextStyle(
                                       color: Colors.white70,
