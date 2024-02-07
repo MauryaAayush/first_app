@@ -373,7 +373,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         'Lamp',
                         style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
@@ -382,14 +382,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.fromLTRB(12, 0, 0, 0),
+                      margin: const EdgeInsets.fromLTRB(12, 0, 0, 0),
                       height: height * 0.045,
                       width: width * 0.35,
                       decoration: BoxDecoration(
-                          color: Color(0xFF181A20),
-                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                          color: const Color(0xFF181A20),
+                          borderRadius: const BorderRadius.all(Radius.circular(30)),
                           border:
-                              Border.all(color: Color(0xFF35383F), width: 2)),
+                              Border.all(color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Cupboard',
                         style: GoogleFonts.poppins(
