@@ -26,13 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(10, 38, 10, 12),
+                    margin: const EdgeInsets.fromLTRB(10, 38, 10, 12),
                     height: height * 0.08,
                     width: width * 0.918,
-                    decoration: BoxDecoration(
-                        // color: Colors.blue,
-                        ),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CircleAvatar(
