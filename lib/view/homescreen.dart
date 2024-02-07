@@ -496,8 +496,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-Widget CategoriesBox(String text, Icon icons) {
-  return Padding(
+Widget CategoriesBox(String text, Icon icons) => Padding(
     padding: const EdgeInsets.all(8.0),
     child: Column(
       children: [
@@ -518,7 +517,6 @@ Widget CategoriesBox(String text, Icon icons) {
       ],
     ),
   );
-}
 
 Widget Products(BuildContext context, String img, String text, String rate,
     String sale, String price) {
