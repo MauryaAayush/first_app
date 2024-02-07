@@ -253,7 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+              margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
               // color: Colors.blue,
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -262,17 +262,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                      margin: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                       height: height * 0.045,
                       width: width * 0.18,
                       decoration: BoxDecoration(
-                          color: Color(0xFF35383F),
-                          borderRadius: BorderRadius.all(Radius.circular(30)),
-                          border: Border.all(color: Color(0xFF35383F))),
+                          color: const Color(0xFF35383F),
+                          borderRadius: const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(color: const Color(0xFF35383F))),
                       child: Text(
                         'All',
                         style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
