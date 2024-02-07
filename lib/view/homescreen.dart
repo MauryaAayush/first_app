@@ -86,9 +86,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 11),
-              padding: EdgeInsets.symmetric(horizontal: 15),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.symmetric(horizontal: 11),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              decoration: const BoxDecoration(
                   color: Color(0xFF1F222A),
                   borderRadius: BorderRadius.all(Radius.circular(20))),
               child: Row(
