@@ -559,11 +559,11 @@ Widget Products(BuildContext context, String img, String text, String rate,
             ],
           ),
         ),
-        SizedBox.square(dimension: 10),
+        const SizedBox.square(dimension: 10),
         Text(
           text,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
               color: Colors.white,
               fontSize: 15.5,
               fontWeight: FontWeight.w600,
