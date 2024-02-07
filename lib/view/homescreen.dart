@@ -413,7 +413,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         'vase',
                         style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
@@ -425,7 +425,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
@@ -438,7 +438,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             r1[index]['sale'],
                             r1[index]['price'])))),
             Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
@@ -451,7 +451,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             r2[index]['sale'],
                             r2[index]['price'])))),
             Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
@@ -464,7 +464,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             r3[index]['sale'],
                             r3[index]['price'])))),
             Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
@@ -477,7 +477,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             r4[index]['sale'],
                             r4[index]['price'])))),
             Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
