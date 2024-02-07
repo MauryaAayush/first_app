@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               margin: EdgeInsets.symmetric(vertical: 25),
               padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -142,11 +142,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Container(
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 15),
+                margin: const EdgeInsets.symmetric(horizontal: 15),
                 height: height * 0.21,
                 width: width,
                 decoration: BoxDecoration(
-                    color: Color(0xFF35383F),
+                    color: const Color(0xFF35383F),
                     borderRadius: BorderRadius.circular(30)),
                 child: Column(
                   children: [
