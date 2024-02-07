@@ -579,12 +579,12 @@ Widget Products(BuildContext context, String img, String text, String rate,
               Icons.star_half,
               color: Colors.white,
             ),
-            SizedBox.square(
+            const SizedBox.square(
               dimension: 10,
             ),
             Text('$rate   |',
                 style: GoogleFonts.poppins(
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                       color: Colors.white,
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
