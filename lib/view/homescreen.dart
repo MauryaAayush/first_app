@@ -208,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+              margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: List.generate(
