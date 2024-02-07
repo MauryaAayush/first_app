@@ -501,14 +501,12 @@ Widget CategoriesBox(String text, Icon icons) {
     padding: const EdgeInsets.all(8.0),
     child: Column(
       children: [
-        Container(
-          child: CircleAvatar(
-              backgroundColor: Color(0xFF35383F),
-              // backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
-              radius: 32,
-              child: icons),
-        ),
-        SizedBox.square(dimension: 12),
+        CircleAvatar(
+            backgroundColor: const Color(0xFF35383F),
+            // backgroundImage: NetworkImage('https://shop.gkwretail.com/cdn/shop/products/1SeaterSofaAquaLivingRoomArmChairwithTaperedWood-1.jpg?v=1630501220&width=713'),
+            radius: 32,
+            child: icons),
+        const SizedBox.square(dimension: 12),
         Text(
           text,
           style: GoogleFonts.poppins(
