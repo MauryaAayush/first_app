@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                 "Today's Special!",
                                 style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
+                                  textStyle: const TextStyle(
                                       color: Colors.white,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600),
