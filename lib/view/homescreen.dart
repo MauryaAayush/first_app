@@ -589,7 +589,7 @@ Widget Products(BuildContext context, String img, String text, String rate,
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
                 )),
-            SizedBox.square(
+            const SizedBox.square(
               dimension: 10,
             ),
             Container(
@@ -616,7 +616,7 @@ Widget Products(BuildContext context, String img, String text, String rate,
         ),
         Text(price,
             style: GoogleFonts.poppins(
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
               color: Colors.white,
               fontSize: 15,
               fontWeight: FontWeight.w600,
