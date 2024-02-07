@@ -349,11 +349,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Color(0xFF181A20),
                           borderRadius: BorderRadius.all(Radius.circular(30)),
                           border:
-                              Border.all(color: Color(0xFF35383F), width: 2)),
+                              Border.all(color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Kitchen',
                         style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
