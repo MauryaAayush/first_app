@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(10, 30, 0, 0),
+                    margin: EdgeInsets.fromLTRB(10, 38, 10, 12),
                     height: height * 0.08,
                     width: width * 0.918,
                     decoration: BoxDecoration(
@@ -35,16 +35,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        
                         CircleAvatar(
                           backgroundColor: Colors.blue,
-                          radius: 25,
+                          radius: 23,
                           backgroundImage: AssetImage('assets/images/me.jpg'),
-                         foregroundImage: AssetImage('assets/images/me.jpg'),
+                          foregroundImage: AssetImage('assets/images/me.jpg'),
                         ),
 
                         // here we have written the text of 👋 and AM
-                         Column(
+                        Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -118,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 10),
+              margin: EdgeInsets.symmetric(vertical: 25),
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -149,56 +148,64 @@ class _HomeScreenState extends State<HomeScreen> {
                 decoration: BoxDecoration(
                     color: Color(0xFF35383F),
                     borderRadius: BorderRadius.circular(30)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                child: Column(
                   children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 25, vertical: 20),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '25%',
-                            style: GoogleFonts.poppins(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 40,
-                                  fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                          Text(
-                            "Today's Special!",
-                            style: GoogleFonts.poppins(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                          SizedBox.square(
-                            dimension: 10,
-                          ),
-                          Text(
-                              "Get discount for every \norder.onlyvalid for today",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w600,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 25, vertical: 20),
+
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '25%',
+                                style: GoogleFonts.poppins(
+                                  textStyle: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 40,
+                                      fontWeight: FontWeight.w600),
                                 ),
-                              ))
-                        ],
-                      ),
+                              ),
+                              Text(
+                                "Today's Special!",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ),
+                              SizedBox.square(
+                                dimension: 10,
+                              ),
+                              Text(
+                                  "Get discount for every \norder.onlyvalid for today",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.white70,
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.symmetric(horizontal: 10),
+                          height: height * 0.2,
+                          width: width * 0.3,
+                          // color: Colors.blue,
+                          child: Image.asset('assets/images/sofa.png'),
+                        ),
+                      ],
                     ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 10),
-                      height: height * 0.2,
-                      width: width * 0.3,
-                      // color: Colors.blue,
-                      child: Image.asset('assets/images/sofa.png'),
-                    ),
+                    Row(
+
+                    )
                   ],
                 ),
               ),
@@ -221,8 +228,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon2[index]['text'], icon2[index]['icons'])),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 18),
-              padding: EdgeInsets.symmetric(horizontal: 28),
+              margin: EdgeInsets.symmetric(vertical: 25),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               // color: Colors.blue,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -249,6 +256,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
               // color: Colors.blue,
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -419,23 +427,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
-                  children: List.generate(
-                      r1.length,
-                          (index) => Products(
-                          context,
-                          r1[index]['img'],
-                          r1[index]['text'],
-                          r1[index]['rate'],
-                          r1[index]['sale'],
-                          r1[index]['price']
-                      )
-                  )
-                )),
+                    children: List.generate(
+                        r1.length,
+                        (index) => Products(
+                            context,
+                            r1[index]['img'],
+                            r1[index]['text'],
+                            r1[index]['rate'],
+                            r1[index]['sale'],
+                            r1[index]['price'])))),
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
@@ -448,62 +452,46 @@ class _HomeScreenState extends State<HomeScreen> {
                             r2[index]['text'],
                             r2[index]['rate'],
                             r2[index]['sale'],
-                            r2[index]['price']
-                        )
-                    )
-                )
-            ),
+                            r2[index]['price'])))),
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
                         r3.length,
-                            (index) => Products(
+                        (index) => Products(
                             context,
                             r3[index]['img'],
                             r3[index]['text'],
                             r3[index]['rate'],
                             r3[index]['sale'],
-                            r3[index]['price']
-                        )
-                    )
-                )
-            ),
+                            r3[index]['price'])))),
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
                         r4.length,
-                            (index) => Products(
+                        (index) => Products(
                             context,
                             r4[index]['img'],
                             r4[index]['text'],
                             r4[index]['rate'],
                             r4[index]['sale'],
-                            r4[index]['price']
-                        )
-                    )
-                )
-            ),
+                            r4[index]['price'])))),
             Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 // color: Colors.blue,
                 child: Row(
                     children: List.generate(
                         r5.length,
-                            (index) => Products(
+                        (index) => Products(
                             context,
                             r5[index]['img'],
                             r5[index]['text'],
                             r5[index]['rate'],
                             r5[index]['sale'],
-                            r5[index]['price']
-                        )
-                    )
-                )
-            ),
+                            r5[index]['price'])))),
           ],
         ),
       ),
@@ -571,7 +559,6 @@ Widget Products(BuildContext context, String img, String text, String rate,
                   ),
                 ),
               ),
-
             ],
           ),
         ),

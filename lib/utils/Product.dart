@@ -19,14 +19,14 @@ List r1 = [
 
 List r2 = [
   {
-    'img' : 'assets/images/dinning2.png',
+    'img' : 'assets/images/3sofa.png',
     'text' : 'table + 2Chair',
     'rate' : '4.8',
     'sale' : '4,866 sold',
     'price' : '\$100.29'
   },
   {
-    'img' : 'assets/images/dinning.png',
+    'img' : 'assets/images/table.png',
     'text' : 'Royal dinning',
     'rate' : '4.8',
     'sale' : '6,966 sold',
@@ -43,7 +43,7 @@ List r3 = [
     'price' : '\$90'
   },
   {
-    'img' : 'assets/images/lamp2.png',
+    'img' : 'assets/images/sofa3.png',
     'text' : 'Make-up lamp',
     'rate' : '4.8',
     'sale' : '9,826 sold',
@@ -77,8 +77,8 @@ List r5 = [
     'price' : '\$50.2'
   },
   {
-    'img' : 'assets/images/vas3.png',
-    'text' : 'Wall Vase',
+    'img' : 'assets/images/vase3.png',
+    'text' : 'Designed Vase',
     'rate' : '4.9',
     'sale' : '8,666 sold',
     'price' : '\$70.2'
