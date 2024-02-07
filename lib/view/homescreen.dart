@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       fontWeight: FontWeight.w600),
                                 ),
                               ),
-                              SizedBox.square(
+                              const SizedBox.square(
                                 dimension: 10,
                               ),
                               Text(
