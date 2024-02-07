@@ -17,70 +17,68 @@ class _HomeScreenState extends State<HomeScreen> {
     double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Color(0xFF181A20),
+      backgroundColor: const Color(0xFF181A20),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Container(
-              child: Row(
-                children: [
-                  Container(
-                    margin: const EdgeInsets.fromLTRB(10, 38, 10, 12),
-                    height: height * 0.08,
-                    width: width * 0.918,
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blue,
-                          radius: 23,
-                          backgroundImage: AssetImage('assets/images/me.jpg'),
-                          foregroundImage: AssetImage('assets/images/me.jpg'),
-                        ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.fromLTRB(15, 38, 10, 12),
+                  height: height * 0.08,
+                  width: width * 0.918,
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.blue,
+                        radius: 23,
+                        backgroundImage: AssetImage('assets/images/me.jpg'),
+                        foregroundImage: AssetImage('assets/images/me.jpg'),
+                      ),
 
-                        // here we have written the text of 👋 and AM
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              '  Good Morning 👋',
-                              style: TextStyle(
-                                color: Colors.white70,
-                              ),
+                      // here we have written the text of 👋 and AM
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            '  Good Morning 👋',
+                            style: TextStyle(
+                              color: Colors.white70,
                             ),
-                            Text(
-                              'Aayush Maurya',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16),
-                            )
-                          ],
-                        ),
+                          ),
+                          Text(
+                            'Aayush Maurya',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16),
+                          )
+                        ],
+                      ),
 
-                        SizedBox(
-                          width: 110,
-                        ),
+                      SizedBox(
+                        width: 110,
+                      ),
 
-                        Icon(
-                          Icons.notifications_none_outlined,
-                          size: 30,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 1,
-                        ),
-                        Icon(
-                          Icons.favorite_border_rounded,
-                          size: 30,
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
+                      Icon(
+                        Icons.notifications_none_outlined,
+                        size: 28,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 1,
+                      ),
+                      Icon(
+                        Icons.favorite_border_rounded,
+                        size: 28,
+                        color: Colors.white,
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 11),
