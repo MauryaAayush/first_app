@@ -156,7 +156,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           padding: const EdgeInsets.symmetric(
                               horizontal: 25, vertical: 20),
-
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -203,9 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
-                    Row(
-
-                    )
+                    Row()
                   ],
                 ),
               ),
