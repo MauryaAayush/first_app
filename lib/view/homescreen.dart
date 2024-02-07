@@ -184,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                   "Get discount for every \norder.onlyvalid for today",
                                   style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
+                                    textStyle: const TextStyle(
                                       color: Colors.white70,
                                       fontSize: 11,
                                       fontWeight: FontWeight.w600,
@@ -194,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.symmetric(horizontal: 10),
+                          margin: const EdgeInsets.symmetric(horizontal: 10),
                           height: height * 0.2,
                           width: width * 0.3,
                           // color: Colors.blue,
