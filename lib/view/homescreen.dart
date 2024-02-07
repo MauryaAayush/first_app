@@ -196,7 +196,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                  Row()
                 ],
               ),
             ),
@@ -260,7 +259,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.18,
                       decoration: BoxDecoration(
                           color: const Color(0xFF35383F),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
                           border: Border.all(color: const Color(0xFF35383F))),
                       child: Text(
                         'All',
@@ -279,9 +279,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.2,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Sofa',
                         style: GoogleFonts.poppins(
@@ -299,9 +300,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.22,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Chair',
                         style: GoogleFonts.poppins(
@@ -320,9 +322,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.22,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Table',
                         style: GoogleFonts.poppins(
@@ -340,9 +343,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.29,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Kitchen',
                         style: GoogleFonts.poppins(
@@ -360,9 +364,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.22,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Lamp',
                         style: GoogleFonts.poppins(
@@ -380,9 +385,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.35,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'Cupboard',
                         style: GoogleFonts.poppins(
@@ -400,9 +406,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: width * 0.22,
                       decoration: BoxDecoration(
                           color: const Color(0xFF181A20),
-                          borderRadius: const BorderRadius.all(Radius.circular(30)),
-                          border:
-                              Border.all(color: const Color(0xFF35383F), width: 2)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
+                          border: Border.all(
+                              color: const Color(0xFF35383F), width: 2)),
                       child: Text(
                         'vase',
                         style: GoogleFonts.poppins(
