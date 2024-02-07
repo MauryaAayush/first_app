@@ -512,7 +512,7 @@ Widget CategoriesBox(String text, Icon icons) {
         Text(
           text,
           style: GoogleFonts.poppins(
-              textStyle: TextStyle(
+              textStyle: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
                   fontSize: 15)),
