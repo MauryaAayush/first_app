@@ -528,16 +528,16 @@ Widget Products(BuildContext context, String img, String text, String rate,
   double width = MediaQuery.of(context).size.width;
 
   return Container(
-    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
     // color : Colors.yellow,
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+          margin: const EdgeInsets.fromLTRB(0, 5, 0, 0),
           height: height * 0.2,
           width: width * 0.425,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Color(0xFF35383F),
               borderRadius: BorderRadius.all(Radius.circular(20))),
           child: Stack(
