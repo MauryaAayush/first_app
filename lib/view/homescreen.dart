@@ -570,12 +570,12 @@ Widget Products(BuildContext context, String img, String text, String rate,
             ),
           ),
         ),
-        SizedBox.square(
+        const SizedBox.square(
           dimension: 8,
         ),
         Row(
           children: [
-            Icon(
+            const Icon(
               Icons.star_half,
               color: Colors.white,
             ),
